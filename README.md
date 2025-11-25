@@ -21,6 +21,6 @@ This repository contains the code and resources for the FootAnalytic project, a 
 
 Project website: https://footanalytic.com
 
-## Live Cloud Application for Analysis
+## Live Cloud Application for Analysis 
 
 http://cloud.pakistansupercomputing.com:8505/
