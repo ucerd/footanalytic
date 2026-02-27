@@ -1,26 +1,17 @@
-# FootAnalytic – Foot Weight Analysis System
+# FootAnalytic: Foot Pressure Analysis System
 
-This repository contains the code and resources for the FootAnalytic project, a system for analysing foot weight distribution using a 32×32 FSR sensor matrix and embedded/host software.
+FootAnalytic is an open research project for measuring and analyzing human foot weight distribution using a 32×32 FSR sensor array.  We collected a large dataset of plantar pressure maps (N=2200 healthy adults) and developed machine-learning models (SVM, CNN) to detect abnormal pressure patterns. The codebase includes data processing scripts, ML models, and real-time analysis software. The associated manuscript details the methods and results.
 
-## Structure
+## Features
+- Standardized foot weight distribution patterns for healthy subjects.
+- Raspberry Pi / RISC-V based embedded system with 32×32 sensor grid.
+- Real-time data acquisition and cloud reporting (Python scripts in `src/`).
+- SVM and CNN models for classifying weight distribution (Jupyter examples in `examples/`).
+- Full dataset (anonymized CSVs) released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
 
-- `Cloud/`  
-  Tools and scripts for running foot weight analysis in the cloud, including:
-  - Example CSV datasets (32×32 pressure maps for left and right feet)
-  - Streamlit or similar web-based applications for online visualisation and analysis
+## Installation
+```bash
+git clone https://github.com/ucerd/footanalytic.git
+cd footanalytic
+pip install -r requirements.txt
 
-- `Real-time/`  
-  Real-time acquisition and visualisation tools:
-  - `DAQ/` – Data acquisition firmware (e.g. Arduino or embedded code) to read the FSR matrix
-  - `Host_GUI/` – Desktop GUI, images, and scripts for real-time heatmaps and reports
-
-- `Papers/`  
-  Manuscripts, LaTeX files, and documentation related to the FootAnalytic research work.
-
-## Website
-
-Project website: https://footanalytic.com
-
-## Live Cloud Application for Analysis 
-
-http://cloud.pakistansupercomputing.com:8505/

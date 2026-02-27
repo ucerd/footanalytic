@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /media/ucerd-pc/data-part1/4_Projects/3_CVPs/Spinoff_Startups/foot_weight_destribution/7_Data/Dataset/0_Muskoskeletal_DataSet/Data_Final/2_Host/.venv/bin/python3 "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from serial.tools.miniterm import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
